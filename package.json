@@ -1,23 +1,19 @@
 {
-  "name": "shoppers-paradise-frontend",
+  "name": "shoppers-paradise-backend",
   "version": "1.0.0",
-  "private": true,
+  "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "@stripe/react-stripe-js": "^2.8.0",
-    "@stripe/stripe-js": "^4.4.0",
-    "lucide-react": "^0.383.0",
-    "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "stripe": "^16.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7"
+    "nodemon": "^3.1.4"
   }
 }
